@@ -1,0 +1,12 @@
+com/victorleandro/desafioanotaai/DesafioAnotaAiApplication.class
+com/victorleandro/desafioanotaai/config/mongodb/MongoDBConfig.class
+com/victorleandro/desafioanotaai/entity/Product$ProductBuilder.class
+com/victorleandro/desafioanotaai/entity/Category$CategoryBuilder.class
+com/victorleandro/desafioanotaai/repository/ProductRepository.class
+com/victorleandro/desafioanotaai/entity/Category.class
+com/victorleandro/desafioanotaai/entity/Product.class
+com/victorleandro/desafioanotaai/service/CategoryService.class
+com/victorleandro/desafioanotaai/controller/CategoryDTO$CategoryDTOBuilder.class
+com/victorleandro/desafioanotaai/repository/CategoryRepository.class
+com/victorleandro/desafioanotaai/controller/CategoryDTO.class
+com/victorleandro/desafioanotaai/controller/CategoryController.class

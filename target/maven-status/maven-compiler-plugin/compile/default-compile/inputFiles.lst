@@ -1,0 +1,9 @@
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/entity/Product.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/repository/CategoryRepository.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/config/mongodb/MongoDBConfig.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/entity/Category.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/controller/CategoryController.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/repository/ProductRepository.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/controller/CategoryDTO.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/DesafioAnotaAiApplication.java
+/Users/victorleandro/Documents/project-study/study-project-challenge-notes-ai/src/main/java/com/victorleandro/desafioanotaai/service/CategoryService.java
