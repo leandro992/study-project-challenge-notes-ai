@@ -1,4 +1,4 @@
-package com.victorleandro.desafioanotaai.controller;
+package com.victorleandro.challengenotesai.controller;
 
 import lombok.Builder;
 

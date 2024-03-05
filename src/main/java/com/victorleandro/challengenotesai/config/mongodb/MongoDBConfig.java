@@ -1,4 +1,4 @@
-package com.victorleandro.desafioanotaai.config.mongodb;
+package com.victorleandro.challengenotesai.config.mongodb;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

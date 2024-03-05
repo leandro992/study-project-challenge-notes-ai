@@ -1,4 +1,4 @@
-package com.victorleandro.desafioanotaai.entity;
+package com.victorleandro.challengenotesai.entity;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,11 +12,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor
-@Document(collection = "categories")
-public class Category {
+@Document(collection = "product")
+public class Product {
     @Id
     private String id;
     private String title;
-    private String description;
     private String ownerId;
+    private Integer price;
+    private String description;
+    private Category category;
 }

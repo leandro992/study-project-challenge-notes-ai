@@ -1,8 +1,8 @@
-package com.victorleandro.desafioanotaai.service;
+package com.victorleandro.challengenotesai.service;
 
-import com.victorleandro.desafioanotaai.controller.CategoryDTO;
-import com.victorleandro.desafioanotaai.entity.Category;
-import com.victorleandro.desafioanotaai.repository.CategoryRepository;
+import com.victorleandro.challengenotesai.controller.CategoryDTO;
+import com.victorleandro.challengenotesai.entity.Category;
+import com.victorleandro.challengenotesai.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

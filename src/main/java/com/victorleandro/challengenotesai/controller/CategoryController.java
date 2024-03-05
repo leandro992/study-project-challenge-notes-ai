@@ -1,7 +1,7 @@
-package com.victorleandro.desafioanotaai.controller;
+package com.victorleandro.challengenotesai.controller;
 
-import com.victorleandro.desafioanotaai.entity.Category;
-import com.victorleandro.desafioanotaai.service.CategoryService;
+import com.victorleandro.challengenotesai.entity.Category;
+import com.victorleandro.challengenotesai.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,8 +18,5 @@ public class CategoryController {
     @PostMapping
     public ResponseEntity<Category> save(@RequestBody CategoryDTO request){
        return ResponseEntity.ok(categoryService.save(request));
-
     }
-
-
 }

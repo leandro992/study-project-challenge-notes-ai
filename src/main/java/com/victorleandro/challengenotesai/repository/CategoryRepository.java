@@ -1,6 +1,6 @@
-package com.victorleandro.desafioanotaai.repository;
+package com.victorleandro.challengenotesai.repository;
 
-import com.victorleandro.desafioanotaai.entity.Category;
+import com.victorleandro.challengenotesai.entity.Category;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
