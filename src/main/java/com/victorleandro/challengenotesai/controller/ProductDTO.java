@@ -3,9 +3,10 @@ package com.victorleandro.challengenotesai.controller;
 import lombok.Builder;
 
 @Builder
-public record CategoryDTO(
+public record ProductDTO(
         String id,
         String title,
-        String description,
-        String ownerId) {
+        String ownerId,
+        Integer price,
+        String description) {
 }

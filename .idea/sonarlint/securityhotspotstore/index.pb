@@ -129,3 +129,11 @@ G.idea/sonarlint/issuestore/4/1/412e47f1a5799f3c60b9b4a065d4b957fbf25bbc,0/a/0a
 Q.idea/sonarlint/securityhotspotstore/f/2/f27f0444b808593139600dfdc078e521ca90d81d,e/8/e8b7dc74044bfbdc48c6d3ea0afa761a0c0d85ae
 Å
 Q.idea/sonarlint/securityhotspotstore/2/f/2ffaee30f003da81b38555bcc399191d63ab8500,7/a/7aaa86813870b15b5af1b69c38ce9fe62d15d366
+Ç
+Rsrc/main/java/com/victorleandro/challengenotesai/controller/ProductController.java,d/d/ddfdaa8f7cdf0ab651a66cd55803133697543dcf
+|
+Lsrc/main/java/com/victorleandro/challengenotesai/service/ProductService.java,a/e/aec3232efb8859529726ca61f51aa2d664ef36a2
+x
+Hsrc/main/java/com/victorleandro/challengenotesai/service/ProductDTO.java,b/8/b89a57ea4394a0d26ed0e3580ed9952b3d001f01
+{
+Ksrc/main/java/com/victorleandro/challengenotesai/controller/ProductDTO.java,1/e/1eba3a7120361c7b9cbc4e4c66208a3e716d205e

@@ -1,8 +1,9 @@
 package com.victorleandro.challengenotesai.controller;
 
-import com.victorleandro.challengenotesai.entity.Category;
-import com.victorleandro.challengenotesai.service.CategoryService;
+import com.victorleandro.challengenotesai.entity.Product;
+import com.victorleandro.challengenotesai.service.ProductService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,30 +17,31 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/category")
+@RequestMapping("/api/product")
 @RequiredArgsConstructor
-public class CategoryController {
+public class ProductController {
 
-   private final CategoryService categoryService;
+    private final ProductService productService;
     @PostMapping
-    public ResponseEntity<Category> save(@RequestBody CategoryDTO request){
+    public ResponseEntity<Product> save(@RequestBody ProductDTO request) throws Exception {
 
-       return ResponseEntity.ok(categoryService.save(request));
+        return ResponseEntity.ok(productService.save(request));
     }
 
     @GetMapping
-    public ResponseEntity<List<Category>> save(){
-        return ResponseEntity.ok(categoryService.categoryList());
+    public ResponseEntity<List<Product>> save(){
+        return ResponseEntity.ok(productService.productList());
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Category> replace(@PathVariable("id") String id, @RequestBody CategoryDTO request) throws Exception {
-        return ResponseEntity.ok(categoryService.categoryReplace(id, request));
+    public ResponseEntity<Product> replace(@PathVariable("id") String id, @RequestBody ProductDTO request) throws ChangeSetPersister.NotFoundException {
+        return ResponseEntity.ok(productService.replace(id, request));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable("id") String id) throws Exception {
-        categoryService.categoryDelete(id);
+        productService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
 }
