@@ -35,18 +35,19 @@ public class ProductService {
     }
 
     public Product replace(String id, ProductDTO productDTO) throws NotFoundException {
-        Category byId = categoryService.categoryFindById(id).orElseThrow(NotFoundException::new);
+        Category category = categoryService.categoryFindById(id).orElseThrow(NotFoundException::new);
         Product product = productRepository.findById(id).orElseThrow(NotFoundException::new);
         Product responseSave = Product.builder()
                 .id(product.getId())
-                .description(!productDTO.description().isEmpty() ? productDTO.description() : byId.getDescription())
-                .title(!productDTO.title().isEmpty() ? productDTO.title() : byId.getTitle())
+                .description(!productDTO.description().isEmpty() ? productDTO.description() : category.getDescription())
+                .title(!productDTO.title().isEmpty() ? productDTO.title() : category.getTitle())
                 .price(product.getPrice())
-                .category(byId)
+                .category(category)
                 .ownerId(!productDTO.ownerId().isEmpty() ? productDTO.ownerId() : product.getOwnerId())
                 .build();
         return productRepository.save(responseSave);
     }
+
 
     public void delete(String id) throws NotFoundException {
         Product byId = productRepository.findById(id).orElseThrow(NotFoundException::new);

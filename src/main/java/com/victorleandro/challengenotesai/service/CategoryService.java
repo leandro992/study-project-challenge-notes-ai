@@ -41,6 +41,7 @@ public class CategoryService {
                 .id(byId.getId())
                 .description(!categoryDTO.description().isEmpty() ? categoryDTO.description() : byId.getDescription())
                 .title(!categoryDTO.title().isEmpty() ? categoryDTO.title() : byId.getTitle())
+                .ownerId(!categoryDTO.title().isEmpty() ? categoryDTO.ownerId(): byId.getOwnerId())
                 .build();
         return categoryRepository.save(responseSave);
     }
